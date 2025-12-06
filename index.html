@@ -31,7 +31,7 @@
         margin-left: 10px;         
         font-size: 28px;            
         font-weight: bold;          
-        padding: 5px 10px;         
+        padding: 5px;         
         border: 2px solid red;
         border-radius: 2px;        
         background-color: white;  
@@ -51,7 +51,7 @@
     </style>
 </head>
 <body>
-    <h2>Calculadora de Mils</h2>
+    <h2>Calculadora de Mils -sVs-</h2>
 
     <label for="metros">Metros: </label>
     <input type="number" id="metros" step="any">
@@ -70,11 +70,12 @@
         function calcular() {
             const metros = parseFloat(document.getElementById('metros').value);
             if (isNaN(metros)) {
-                document.getElementById('resultado').textContent = "Ingresa un número válido";
+                document.getElementById('resultado').textContent = "Ingrese un número válido soldado";
                 return;
             }
             const mils = 0.665 * metros + 666;
             document.getElementById('resultado').textContent = mils.toFixed(2);
+
         }
     </script>
 </body>
