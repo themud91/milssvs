@@ -51,9 +51,11 @@
     </style>
 </head>
 <body>
-    <h2>Calculadora de Mils -sVs-</h2>
+    <h1>-sVs-</h1>
+    <h2>Calculadora de MILS</h2>
 
-    <label for="metros">Metros: </label>
+
+    <label for="metros">Metros : </label>
     <input type="number" id="metros" step="any">
 
     <div class="boton-resultado">
@@ -62,7 +64,7 @@
     </div>
 
     <footer>
-        <p>Fórmula utilizada: mils = 0.665 * metros + 666 (aka la formula del diablo)</p>
+        <p>Formula utilizada: mils = 0.665 * metros + 666 (aka la formula del diablo)</p>
         <p>@ KrAkEN -sVs- 2025</p>
     </footer>
 
@@ -70,7 +72,7 @@
         function calcular() {
             const metros = parseFloat(document.getElementById('metros').value);
             if (isNaN(metros)) {
-                document.getElementById('resultado').textContent = "Ingrese un número válido soldado";
+                document.getElementById('resultado').textContent = "Ingrese un numero valido soldado";
                 return;
             }
             const mils = 0.665 * metros + 666;
