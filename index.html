@@ -66,7 +66,7 @@
 
     <footer class="mt-4">
         <p>Formula utilizada:</p>
-        <p>MILS = 0.665 * metros + 666</p>
+        <p>MILS = (-0.665 * metros) + 666</p>
         <p>@ KrAkEN -sVs- 2025</p>
     </footer>
 
@@ -83,7 +83,7 @@ function calcular() {
         return;
     }
 
-    const mils = 0.665 * metros + 666;
+    const mils = (0.665 * metros) + 666;
     document.getElementById('resultado').textContent = mils.toFixed(2) + "  MILS";
 }
 </script>
